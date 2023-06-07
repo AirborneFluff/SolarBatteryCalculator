@@ -31,3 +31,8 @@ Virtual Bill: £-15.6489
 
 ## What else?
 You can also modify the parameters of the inverter within 'Inverter.h'. The **Charge Efficieny** and **Discharge Efficiency** are taken into account when running the calculation
+
+### What to do next
+- Add date checking to make sure the import and export data begins at the same date
+- Add a Maximum Charge/Discharge rate for the batteries (e.g 3.2KW). This would only be useful for more precise readings (every 5 mins) to get a close-enough approximation of actual wattage at that time
+- Build a UI with parameter input and data file selection fields
