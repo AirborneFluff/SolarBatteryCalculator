@@ -54,14 +54,13 @@ int main(int argc, char* argv[])
     float virtualImportVal = i_meter/1000 * ImportUnitRate;
     float virtualExportVal = e_meter/1000 * ExportUnitRate;
 
-    std::cout << inverter.GetBatteryChargeLevel() << std::endl;
-    std::cout << "Real Import: " << i_r_meter << "\t \x9C" << importVal << std::endl;
-    std::cout << "Real Export: " << e_r_meter << "\t \x9C" << exportVal << std::endl;
-    std::cout << "Real Month Bill: \x9C" << importVal - exportVal << std::endl;
+    std::cout << "Real Import: " << i_r_meter << "kWh\t \x9C" << importVal << std::endl;
+    std::cout << "Real Export: " << e_r_meter << "kWh\t \x9C" << exportVal << std::endl;
+    std::cout << "Real Bill: \x9C" << importVal - exportVal << std::endl;
     
-    std::cout << "Virtual Import: " << i_meter/1000 << "\t \x9C" << virtualImportVal << std::endl;
-    std::cout << "Virtual Export: " << e_meter/1000 << "\t \x9C" << virtualExportVal << std::endl;
-    std::cout << "Virtual Month Bill: \x9C" << virtualImportVal - virtualExportVal << std::endl;
+    std::cout << "Virtual Import: " << i_meter/1000 << "kWh\t \x9C" << virtualImportVal << std::endl;
+    std::cout << "Virtual Export: " << e_meter/1000 << "kWh\t \x9C" << virtualExportVal << std::endl;
+    std::cout << "Virtual Bill: \x9C" << virtualImportVal - virtualExportVal << std::endl;
     return 0;
 }
 
