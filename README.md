@@ -21,10 +21,13 @@ float ExportUnitRate = 0.15f; // 15p
 
 4. Finally, compile and run the project and you will see in the console a summary of the resuls
 ```
-Real Import: 111.456     £46.8115
-Real Export: 376.435     £26.3505
-Real Month Bill: £20.4611
-Virtual Import: 7.41029  £3.11232
-Virtual Export: 268.017  £18.7612
-Virtual Month Bill: £-15.6489
+Real Import: 111.456kWh  £46.8115
+Real Export: 376.435kWh  £26.3505
+Real Bill: £20.4611
+Virtual Import: 7.41029kWh       £3.11232
+Virtual Export: 268.017kWh       £18.7612
+Virtual Bill: £-15.6489
 ```
+
+## What else?
+You can also modify the parameters of the inverter within 'Inverter.h'. The **Charge Efficieny** and **Discharge Efficiency** are taken into account when running the calculation
